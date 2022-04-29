@@ -8,6 +8,10 @@ Challenges are listed in the `src/` directory:
 
 <!--CHALLENGES-->
 
-Common utilities are provided in `src/common`:
+Some common utility types you may use in your solutions are provided in `src/utility`:
 
 <!--UTILITIES-->
+
+Testing-related types and mock data can be found in `src/common`:
+
+<!--COMMON-->
