@@ -8,10 +8,14 @@ Everyone knows you can write code to do things, but can you write the same thing
 
 Challenges are listed in the `src/` directory:
 
-1. (`★★☆☆☆`) [Reverse](./src/Reverse.ts)
+1. (`★★☆☆☆`) [ReverseTuple](./src/ReverseTuple.ts)
+2. (`★★★☆☆`) [DeleteCharacter](./src/DeleteCharacter.ts)
 
-Common utilities are provided in `src/common`:
+Some common utility types you may use in your solutions are provided in `src/utility`:
+
+- [`RetainMutability.ts`](./src/utility/RetainMutability.ts)
+- [`UnknownArray.ts`](./src/utility/UnknownArray.ts)
+
+Testing-related types and mock data can be found in `src/common`:
 
 - [`Assert.ts`](./src/common/Assert.ts)
-- [`RetainMutability.ts`](./src/common/RetainMutability.ts)
-- [`UnknownArray.ts`](./src/common/UnknownArray.ts)

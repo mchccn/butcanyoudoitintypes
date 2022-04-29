@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "name": "ReverseTuple",
+        "difficulty": 2,
+        "description": "Reverse a tuple or readonly tuple, while maintaining mutability of the tuple."
+    },
+    {
+        "id": "2",
+        "name": "DeleteCharacter",
+        "difficulty": 3,
+        "description": "Remove all occurrences of a character from a string."
+    }
+]
