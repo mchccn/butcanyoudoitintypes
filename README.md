@@ -8,8 +8,9 @@ Everyone knows you can write code to do things, but can you write the same thing
 
 Challenges are listed in the `src/` directory:
 
-1. (`★★☆☆☆`) [ReverseTuple](./src/ReverseTuple.ts)
-2. (`★★★☆☆`) [DeleteCharacter](./src/DeleteCharacter.ts)
+1. (`★★☆☆☆☆`) [ReverseTuple](./src/ReverseTuple.ts)
+2. (`★★★☆☆☆`) [DeleteCharacter](./src/DeleteCharacter.ts)
+3. (`★★★★☆☆`) [MiddleCharacter](./src/MiddleCharacter.ts)
 
 Some common utility types you may use in your solutions are provided in `src/utility`:
 

@@ -13,7 +13,7 @@ writeFileSync(
                     .sort((a, b) => +a.file.match(/id: (\d+)/)![1] - +b.file.match(/id: (\d+)/)![1])
                     .map(
                         ({ name, file }) =>
-                            `${file.match(/id: (\d+)/)![1]}. (\`${"★".repeat(+file.match(/difficulty: (\d+)/)![1]).padEnd(5, "☆")}\`) [${name.slice(
+                            `${file.match(/id: (\d+)/)![1]}. (\`${"★".repeat(+file.match(/difficulty: (\d+)/)![1]).padEnd(6, "☆")}\`) [${name.slice(
                                 0,
                                 -3
                             )}](./src/${name})`

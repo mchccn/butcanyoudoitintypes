@@ -10,5 +10,11 @@
         "name": "DeleteCharacter",
         "difficulty": 3,
         "description": "Remove all occurrences of a character from a string."
+    },
+    {
+        "id": "3",
+        "name": "MiddleCharacter",
+        "difficulty": 4,
+        "description": "Get the middle character of a string (middle two if length is even)."
     }
 ]
