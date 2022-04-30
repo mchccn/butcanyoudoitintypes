@@ -22,5 +22,11 @@
         "name": "IncludesString",
         "difficulty": 2,
         "description": "Check whether or not a substring is present in another string."
+    },
+    {
+        "id": "5",
+        "name": "IsNotNumberLiteral",
+        "difficulty": 1,
+        "description": "Determine whether or not the passed type is a number literal."
     }
 ]
