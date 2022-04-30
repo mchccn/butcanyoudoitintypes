@@ -16,5 +16,11 @@
         "name": "MiddleCharacter",
         "difficulty": 4,
         "description": "Get the middle character of a string (middle two if length is even)."
+    },
+    {
+        "id": "4",
+        "name": "IncludesString",
+        "difficulty": 2,
+        "description": "Check whether or not a substring is present in another string."
     }
 ]
