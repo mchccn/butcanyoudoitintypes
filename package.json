@@ -5,7 +5,8 @@
     "description": "Everyone knows you can write code to do things, but can you write the same thing using only types?",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "ts-node src/build/data.ts && ts-node src/build/template.ts"
     },
     "keywords": [],
     "author": "kelly <cursors.owo.uwu@gmail.com>",

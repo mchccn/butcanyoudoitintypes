@@ -15,6 +15,7 @@ Challenges are listed in the `src/` directory:
 
 Some common utility types you may use in your solutions are provided in `src/utility`:
 
+- [`Expand.ts`](./src/utility/Expand.ts)
 - [`RetainMutability.ts`](./src/utility/RetainMutability.ts)
 - [`UnknownArray.ts`](./src/utility/UnknownArray.ts)
 
