@@ -28,5 +28,11 @@
         "name": "IsNotNumberLiteral",
         "difficulty": 1,
         "description": "Determine whether or not the passed type is a number literal."
+    },
+    {
+        "id": "6",
+        "name": "IsNever",
+        "difficulty": 1,
+        "description": "Check if the passed type is never."
     }
 ]

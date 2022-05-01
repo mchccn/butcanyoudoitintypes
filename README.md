@@ -13,6 +13,7 @@ Challenges are listed in the `src/` directory:
 3. (`★★★★☆☆`) [MiddleCharacter](./src/MiddleCharacter.ts)
 4. (`★★☆☆☆☆`) [IncludesString](./src/IncludesString.ts)
 5. (`★☆☆☆☆☆`) [IsNotNumberLiteral](./src/IsNotNumberLiteral.ts)
+6. (`★☆☆☆☆☆`) [IsNever](./src/IsNever.ts)
 
 Some common utility types you may use in your solutions are provided in `src/utility`:
 
