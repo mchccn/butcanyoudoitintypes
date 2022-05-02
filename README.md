@@ -14,6 +14,8 @@ Challenges are listed in the `src/` directory:
 4. (`★★☆☆☆☆`) [IncludesString](./src/IncludesString.ts)
 5. (`★☆☆☆☆☆`) [IsNotNumberLiteral](./src/IsNotNumberLiteral.ts)
 6. (`★☆☆☆☆☆`) [IsNever](./src/IsNever.ts)
+7. (`☆☆☆☆☆☆`) [MakeExciting](./src/MakeExciting.ts)
+7. (`★★★☆☆☆`) [PeriodsToUnderscores](./src/PeriodsToUnderscores.ts)
 
 Some common utility types you may use in your solutions are provided in `src/utility`:
 

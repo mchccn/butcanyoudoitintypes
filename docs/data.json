@@ -34,5 +34,17 @@
         "name": "IsNever",
         "difficulty": 1,
         "description": "Check if the passed type is never."
+    },
+    {
+        "id": "7",
+        "name": "MakeExciting",
+        "difficulty": 0,
+        "description": "Append '!' to a string."
+    },
+    {
+        "id": "7",
+        "name": "PeriodsToUnderscores",
+        "difficulty": 3,
+        "description": "Append '!' to a string."
     }
 ]
