@@ -15,14 +15,19 @@ Challenges are listed in the `src/` directory:
 5. (`★☆☆☆☆☆`) [IsNotNumberLiteral](./src/IsNotNumberLiteral.ts)
 6. (`★☆☆☆☆☆`) [IsNever](./src/IsNever.ts)
 7. (`☆☆☆☆☆☆`) [MakeExciting](./src/MakeExciting.ts)
-7. (`★★★☆☆☆`) [PeriodsToUnderscores](./src/PeriodsToUnderscores.ts)
+8. (`★★★☆☆☆`) [PeriodsToUnderscores](./src/PeriodsToUnderscores.ts)
+9. (`★★★★★☆`) [MergeSort](./src/MergeSort.ts)
 
 Some common utility types you may use in your solutions are provided in `src/utility`:
 
+- [`Decrement.ts`](./src/utility/Decrement.ts)
 - [`Expand.ts`](./src/utility/Expand.ts)
+- [`Increment.ts`](./src/utility/Increment.ts)
+- [`Primitive.ts`](./src/utility/Primitive.ts)
 - [`RetainMutability.ts`](./src/utility/RetainMutability.ts)
 - [`UnknownArray.ts`](./src/utility/UnknownArray.ts)
 
 Testing-related types and mock data can be found in `src/common`:
 
 - [`Assert.ts`](./src/common/Assert.ts)
+- [`Unreadonly.ts`](./src/common/Unreadonly.ts)

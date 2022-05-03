@@ -42,9 +42,15 @@
         "description": "Append '!' to a string."
     },
     {
-        "id": "7",
+        "id": "8",
         "name": "PeriodsToUnderscores",
         "difficulty": 3,
         "description": "Append '!' to a string."
+    },
+    {
+        "id": "9",
+        "name": "MergeSort",
+        "difficulty": 5,
+        "description": "Implement the merge sort algorithm."
     }
 ]
