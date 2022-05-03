@@ -5,7 +5,7 @@
  * description: Append '!' to a string.
  */
 
-import { Assert } from "./common/Assert";
+import { Assert } from "./common";
 
 type MakeExciting<S extends string> = `${S}!`;
 

@@ -5,7 +5,7 @@
  * description: Append '!' to a string.
  */
 
-import { Assert } from "./common/Assert";
+import { Assert } from "./common";
 
 type PeriodsToUnderscores<S extends string> = S extends `${infer A}.${infer B}` ? `${A}_${PeriodsToUnderscores<B>}` : S;
 

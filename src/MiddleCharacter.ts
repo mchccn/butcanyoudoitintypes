@@ -5,8 +5,8 @@
  * description: Get the middle character of a string (middle two if length is even).
  */
 
-import { Assert } from "./common/Assert";
-import { UnknownArray } from "./utility/UnknownArray";
+import { Assert } from "./common";
+import { UnknownArray } from "./utility";
 
 type Split<S extends string, R extends UnknownArray = readonly []> = S extends `${infer C}${infer M}` ? Split<M, readonly [...R, C]> : R;
 

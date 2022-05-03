@@ -5,7 +5,7 @@
  * description: Check if the passed type is never.
  */
 
-import { Assert } from "./common/Assert";
+import { Assert } from "./common";
 
 type IsNever<T> = [T] extends [never] ? true : false;
 

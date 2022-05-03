@@ -5,9 +5,8 @@
  * description: Implement the merge sort algorithm.
  */
 
-import { Assert } from "./common/Assert";
-import { Unreadonly } from "./common/Unreadonly";
-import { Decrement } from "./utility/Decrement";
+import { Assert, Unreadonly } from "./common";
+import { Decrement } from "./utility";
 
 type GreaterThan<A extends number, B extends number> = A extends B ? false : B extends 0 ? true : A extends 0 ? false : GreaterThan<Decrement[A], Decrement[B]>;
 

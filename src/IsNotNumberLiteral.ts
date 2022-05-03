@@ -5,7 +5,7 @@
  * description: Determine whether or not the passed type is a number literal.
  */
 
-import { Assert } from "./common/Assert";
+import { Assert } from "./common";
 
 type IsNotNumberLiteral<T> = T extends number ? (0 extends T ? (1 extends T ? false : true) : true) : never;
 

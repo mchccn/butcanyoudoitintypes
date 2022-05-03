@@ -17,6 +17,7 @@ Challenges are listed in the `src/` directory:
 7. (`☆☆☆☆☆☆`) [MakeExciting](./src/MakeExciting.ts)
 8. (`★★★☆☆☆`) [PeriodsToUnderscores](./src/PeriodsToUnderscores.ts)
 9. (`★★★★★☆`) [MergeSort](./src/MergeSort.ts)
+10. (`★★★☆☆☆`) [NoOverlappingKeys](./src/NoOverlappingKeys.ts)
 
 Some common utility types you may use in your solutions are provided in `src/utility`:
 
@@ -30,4 +31,5 @@ Some common utility types you may use in your solutions are provided in `src/uti
 Testing-related types and mock data can be found in `src/common`:
 
 - [`Assert.ts`](./src/common/Assert.ts)
+- [`Never.ts`](./src/common/Never.ts)
 - [`Unreadonly.ts`](./src/common/Unreadonly.ts)
