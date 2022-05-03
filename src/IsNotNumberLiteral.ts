@@ -3,6 +3,9 @@
  * name: IsNotNumberLiteral
  * difficulty: 1
  * description: Determine whether or not the passed type is a number literal.
+ * extra: Check if the passed type is a string literal.
+ * tags: fundamentals, numbers
+ * related: IsEven, IsNever
  */
 
 import { Assert } from "./common";

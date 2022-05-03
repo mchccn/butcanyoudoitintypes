@@ -13,6 +13,9 @@ writeFileSync(
                 name: file.match(/name: (.+)\n/)![1],
                 difficulty: +file.match(/difficulty: (\d+)/)![1],
                 description: file.match(/description: (.+)\n/)![1],
+                extra: file.match(/extra: (.+)\n/)![1],
+                tags: file.match(/tags: (.+)\n/)![1].split(", "),
+                related: file.match(/related: (.+)\n/)![1].split(", "),
             })),
         undefined,
         4

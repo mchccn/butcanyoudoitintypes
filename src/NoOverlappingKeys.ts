@@ -3,6 +3,9 @@
  * name: NoOverlappingKeys
  * difficulty: 3
  * description: If the two types have conflicting keys, output never, otherwise output the intersection of them.
+ * extra: Output the difference of the two types if they have conflicting keys.
+ * tags: fundamentals, utility
+ * related: DeepOverlappingKeys
  */
 
 import { Assert, Never } from "./common";

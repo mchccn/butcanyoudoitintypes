@@ -3,6 +3,9 @@
  * name: IsNever
  * difficulty: 1
  * description: Check if the passed type is never.
+ * extra: Check if the passed type is any.
+ * tags: fundamentals
+ * related: IsEven, IsNotNumberLiteral
  */
 
 import { Assert } from "./common";

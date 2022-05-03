@@ -3,6 +3,9 @@
  * name: MergeSort
  * difficulty: 5
  * description: Implement the merge sort algorithm.
+ * extra: Implement a different sorting algorithm.
+ * tags: tuples, algorithms
+ * related: Halves
  */
 
 import { Assert, Unreadonly } from "./common";

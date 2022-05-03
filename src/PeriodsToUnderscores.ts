@@ -2,7 +2,10 @@
  * id: 8
  * name: PeriodsToUnderscores
  * difficulty: 3
- * description: Append '!' to a string.
+ * description: Change all periods to underscores in a string.
+ * extra: Create a type that transforms camel case strings to snake case.
+ * tags: strings
+ * related: IncludesString
  */
 
 import { Assert } from "./common";

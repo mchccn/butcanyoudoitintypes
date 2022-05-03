@@ -15,3 +15,5 @@ Some common utility types you may use in your solutions are provided in `src/uti
 Testing-related types and mock data can be found in `src/common`:
 
 <!--COMMON-->
+
+For easier browsing of the available challenges, visit the GitHub pages [here](https://kelsny.github.io/butcanyoudoitintypes/).

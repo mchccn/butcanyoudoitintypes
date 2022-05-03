@@ -3,6 +3,9 @@
  * name: MakeExciting
  * difficulty: 0
  * description: Append '!' to a string.
+ * extra: Concatenate two string literal types.
+ * tags: fundamentals, strings
+ * related: DeleteCharacter, IncludesString
  */
 
 import { Assert } from "./common";

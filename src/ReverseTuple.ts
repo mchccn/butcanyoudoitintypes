@@ -3,6 +3,9 @@
  * name: ReverseTuple
  * difficulty: 2
  * description: Reverse a tuple or readonly tuple, while maintaining mutability of the tuple.
+ * extra: Transpose a matrix or tuple of tuples.
+ * tags: fundamentals, tuples
+ * related: MergeSort
  */
 
 import { Assert } from "./common";

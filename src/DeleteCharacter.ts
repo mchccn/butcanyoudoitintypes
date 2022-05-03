@@ -3,6 +3,9 @@
  * name: DeleteCharacter
  * difficulty: 3
  * description: Remove all occurrences of a character from a string.
+ * extra: Make it work for deleting multiple characters using a union.
+ * tags: strings
+ * related: ReplaceCharacter
  */
 
 import { Assert } from "./common";

@@ -3,6 +3,9 @@
  * name: MiddleCharacter
  * difficulty: 4
  * description: Get the middle character of a string (middle two if length is even).
+ * extra: Return string with the middle characters removed.
+ * tags: strings, logic
+ * related: IncludesString, Halves
  */
 
 import { Assert } from "./common";
