@@ -9,7 +9,7 @@ writeFileSync(
             .map(({ name }) => readFileSync(join(__dirname, "..", name), "utf8"))
             .sort((a, b) => +a.match(/id: (\d+)/)![1] - +b.match(/id: (\d+)/)![1])
             .map((file) => ({
-                id: file.match(/id: (\d+)/)![1],
+                id: +file.match(/id: (\d+)/)![1],
                 name: file.match(/name: (.+)\n/)![1],
                 difficulty: +file.match(/difficulty: (\d+)/)![1],
                 description: file.match(/description: (.+)\n/)![1],

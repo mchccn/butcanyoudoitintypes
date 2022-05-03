@@ -1,101 +1,156 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "ReverseTuple",
         "difficulty": 2,
         "description": "Reverse a tuple or readonly tuple, while maintaining mutability of the tuple.",
         "extra": "Transpose a matrix or tuple of tuples.",
-        "tags": ["fundamentals", "tuples"],
-        "related": ["MergeSort"]
+        "tags": [
+            "fundamentals",
+            "tuples"
+        ],
+        "related": [
+            "MergeSort"
+        ]
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "DeleteCharacter",
         "difficulty": 3,
         "description": "Remove all occurrences of a character from a string.",
         "extra": "Make it work for deleting multiple characters using a union.",
-        "tags": ["strings"],
-        "related": ["ReplaceCharacter"]
+        "tags": [
+            "strings"
+        ],
+        "related": [
+            "ReplaceCharacter"
+        ]
     },
     {
-        "id": "3",
+        "id": 3,
         "name": "MiddleCharacter",
         "difficulty": 4,
         "description": "Get the middle character of a string (middle two if length is even).",
         "extra": "Return string with the middle characters removed.",
-        "tags": ["strings", "logic"],
-        "related": ["IncludesString", "Halves"]
+        "tags": [
+            "strings",
+            "logic"
+        ],
+        "related": [
+            "IncludesString",
+            "Halves"
+        ]
     },
     {
-        "id": "4",
+        "id": 4,
         "name": "IncludesString",
         "difficulty": 2,
         "description": "Check whether or not a substring is present in another string.",
         "extra": "Make it work for checking multiple strings at once as a union.",
-        "tags": ["strings"],
-        "related": ["DeleteCharacter"]
+        "tags": [
+            "strings"
+        ],
+        "related": [
+            "DeleteCharacter"
+        ]
     },
     {
-        "id": "5",
+        "id": 5,
         "name": "IsNotNumberLiteral",
         "difficulty": 1,
         "description": "Determine whether or not the passed type is a number literal.",
         "extra": "Check if the passed type is a string literal.",
-        "tags": ["fundamentals", "numbers"],
-        "related": ["IsEven", "IsNever"]
+        "tags": [
+            "fundamentals",
+            "numbers"
+        ],
+        "related": [
+            "IsEven",
+            "IsNever"
+        ]
     },
     {
-        "id": "6",
+        "id": 6,
         "name": "IsNever",
         "difficulty": 1,
         "description": "Check if the passed type is never.",
         "extra": "Check if the passed type is any.",
-        "tags": ["fundamentals"],
-        "related": ["IsEven", "IsNotNumberLiteral"]
+        "tags": [
+            "fundamentals"
+        ],
+        "related": [
+            "IsEven",
+            "IsNotNumberLiteral"
+        ]
     },
     {
-        "id": "7",
+        "id": 7,
         "name": "MakeExciting",
         "difficulty": 0,
         "description": "Append '!' to a string.",
         "extra": "Concatenate two string literal types.",
-        "tags": ["fundamentals", "strings"],
-        "related": ["DeleteCharacter", "IncludesString"]
+        "tags": [
+            "fundamentals",
+            "strings"
+        ],
+        "related": [
+            "DeleteCharacter",
+            "IncludesString"
+        ]
     },
     {
-        "id": "8",
+        "id": 8,
         "name": "PeriodsToUnderscores",
         "difficulty": 3,
         "description": "Change all periods to underscores in a string.",
         "extra": "Create a type that transforms camel case strings to snake case.",
-        "tags": ["strings"],
-        "related": ["IncludesString"]
+        "tags": [
+            "strings"
+        ],
+        "related": [
+            "IncludesString"
+        ]
     },
     {
-        "id": "9",
+        "id": 9,
         "name": "MergeSort",
         "difficulty": 5,
         "description": "Implement the merge sort algorithm.",
         "extra": "Implement a different sorting algorithm.",
-        "tags": ["tuples", "algorithms"],
-        "related": ["Halves"]
+        "tags": [
+            "tuples",
+            "algorithms"
+        ],
+        "related": [
+            "Halves"
+        ]
     },
     {
-        "id": "10",
+        "id": 10,
         "name": "NoOverlappingKeys",
         "difficulty": 3,
         "description": "If the two types have conflicting keys, output never, otherwise output the intersection of them.",
         "extra": "Output the difference of the two types if they have conflicting keys.",
-        "tags": ["fundamentals", "utility"],
-        "related": ["DeepOverlappingKeys"]
+        "tags": [
+            "fundamentals",
+            "utility"
+        ],
+        "related": [
+            "DeepOverlappingKeys"
+        ]
     },
     {
-        "id": "11",
+        "id": 11,
         "name": "IsEven",
         "difficulty": 2,
         "description": "Determine if the passed number is even.",
         "extra": "Return never if the passed type is the generic number type.",
-        "tags": ["fundamentals", "numbers"],
-        "related": ["IsNotNumberLiteral"]
+        "tags": [
+            "fundamentals",
+            "numbers"
+        ],
+        "related": [
+            "IsNotNumberLiteral"
+        ]
     }
 ]
