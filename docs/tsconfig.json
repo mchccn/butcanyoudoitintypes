@@ -1,23 +1,23 @@
 {
     "compilerOptions": {
-        "target": "esnext",
-        "lib": ["dom", "esnext", "esnext.asynciterable"],
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "module": "esnext",
-        "sourceMap": true,
-        "outDir": "dist",
-        "removeComments": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
+        "target": "es6",
+        "module": "es6",
+        "lib": ["dom", "dom.iterable", "es2017.object", "esnext", "esnext.asynciterable"],
+        "importHelpers": true,
+        "downlevelIteration": true,
         "strict": true,
+        "strictPropertyInitialization": false,
         "noImplicitAny": true,
         "noImplicitThis": true,
         "alwaysStrict": true,
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
-        "skipLibCheck": true
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
     },
-    "include": ["src/**/*.ts"],
-    "exclude": ["index.js"]
+    "include": ["src/**/*.ts"]
 }
