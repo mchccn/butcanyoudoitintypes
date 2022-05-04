@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "lib": ["dom", "esnext", "esnext.asynciterable"],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "esnext",
+        "sourceMap": true,
+        "outDir": "dist",
+        "removeComments": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["index.js"]
+}
