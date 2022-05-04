@@ -9,15 +9,11 @@
  */
 
 import { Assert, Equals, Unreadonly } from "./common";
-import { Decrement } from "./utility";
+import { Decrement, UnknownArray } from "./utility";
 
 type GreaterThan<A extends number, B extends number> = A extends B ? false : B extends 0 ? true : A extends 0 ? false : GreaterThan<Decrement[A], Decrement[B]>;
 
-type Merge<
-    Left extends ReadonlyArray<unknown>,
-    Right extends ReadonlyArray<unknown>,
-    Result extends ReadonlyArray<unknown> = readonly []
-> = Left extends readonly []
+type Merge<Left extends UnknownArray, Right extends UnknownArray, Result extends UnknownArray = readonly []> = Left extends readonly []
     ? readonly [...Result, ...Right]
     : Right extends readonly []
     ? readonly [...Result, ...Left]
@@ -34,9 +30,9 @@ type Merge<
     : never;
 
 type Halves<
-    Target extends ReadonlyArray<unknown>,
-    Left extends ReadonlyArray<unknown> = readonly [],
-    Right extends ReadonlyArray<unknown> = readonly []
+    Target extends UnknownArray,
+    Left extends UnknownArray = readonly [],
+    Right extends UnknownArray = readonly []
 > = `${Target["length"]}` extends `${string}${"1" | "3" | "5" | "7" | "9"}`
     ? Target extends readonly [...infer Rest, infer Last]
         ? Halves<Rest, readonly [], readonly [Last]>
@@ -47,11 +43,11 @@ type Halves<
     ? Halves<Rest, readonly [...Left, LFirst], readonly [RFirst, ...Right]>
     : never;
 
-type MergeSort<M extends ReadonlyArray<unknown>> = M extends readonly [] | readonly [unknown]
+type MergeSort<M extends UnknownArray> = M extends readonly [] | readonly [unknown]
     ? M
     : Halves<M> extends readonly [infer Left, infer Right]
-    ? Left extends ReadonlyArray<unknown>
-        ? Right extends ReadonlyArray<unknown>
+    ? Left extends UnknownArray
+        ? Right extends UnknownArray
             ? Merge<MergeSort<Left>, MergeSort<Right>>
             : never
         : never

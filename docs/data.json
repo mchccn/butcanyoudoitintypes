@@ -166,5 +166,19 @@
         "related": [
             "UnionToIntersection"
         ]
+    },
+    {
+        "id": 13,
+        "name": "SwapIndices",
+        "difficulty": 2,
+        "description": "Swap two elements of a tuple.",
+        "extra": "Remove all even indexed elements of a tuple.",
+        "tags": [
+            "tuples",
+            "logic"
+        ],
+        "related": [
+            "ReverseTuple"
+        ]
     }
 ]

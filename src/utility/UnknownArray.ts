@@ -1,1 +1,1 @@
-export type UnknownArray = ReadonlyArray<unknown>;
+export type UnknownArray = UnknownArray;

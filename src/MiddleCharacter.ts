@@ -15,11 +15,9 @@ type Split<S extends string, R extends UnknownArray = readonly []> = S extends `
 
 type IsOdd<N extends number> = `${N}` extends `${string}${"1" | "3" | "5" | "7" | "9"}` ? true : false;
 
-type Halves<
-    Target extends ReadonlyArray<unknown>,
-    Left extends ReadonlyArray<unknown> = readonly [],
-    Right extends ReadonlyArray<unknown> = readonly []
-> = IsOdd<Target["length"]> extends true
+type Halves<Target extends UnknownArray, Left extends UnknownArray = readonly [], Right extends UnknownArray = readonly []> = IsOdd<
+    Target["length"]
+> extends true
     ? Target extends readonly [...infer Rest, infer Last]
         ? Halves<Rest, readonly [], readonly [Last]>
         : never

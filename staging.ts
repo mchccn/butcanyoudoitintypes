@@ -2,3 +2,5 @@
 // ReplaceCharacter
 // DeepOverlappingKeys
 // ValidTupleIndices
+// ValidParentheses
+// DeepGet
