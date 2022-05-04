@@ -8,11 +8,11 @@
  * related: IncludesString
  */
 
-import { Assert } from "./common";
+import { Assert, Equals } from "./common";
 
 type PeriodsToUnderscores<S extends string> = S extends `${infer A}.${infer B}` ? `${A}_${PeriodsToUnderscores<B>}` : S;
 
-type T01 = Assert<PeriodsToUnderscores<"a.b.c">, "a_b_c">;
-type T02 = Assert<PeriodsToUnderscores<"">, "">;
-type T03 = Assert<PeriodsToUnderscores<"...">, "___">;
-type T04 = Assert<PeriodsToUnderscores<".foo.bar.baz.">, "_foo_bar_baz_">;
+type T01 = Assert<Equals<PeriodsToUnderscores<"a.b.c">, "a_b_c">>;
+type T02 = Assert<Equals<PeriodsToUnderscores<"">, "">>;
+type T03 = Assert<Equals<PeriodsToUnderscores<"...">, "___">>;
+type T04 = Assert<Equals<PeriodsToUnderscores<".foo.bar.baz.">, "_foo_bar_baz_">>;

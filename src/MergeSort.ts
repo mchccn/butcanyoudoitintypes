@@ -8,7 +8,7 @@
  * related: Halves
  */
 
-import { Assert, Unreadonly } from "./common";
+import { Assert, Equals, Unreadonly } from "./common";
 import { Decrement } from "./utility";
 
 type GreaterThan<A extends number, B extends number> = A extends B ? false : B extends 0 ? true : A extends 0 ? false : GreaterThan<Decrement[A], Decrement[B]>;
@@ -57,7 +57,7 @@ type MergeSort<M extends ReadonlyArray<unknown>> = M extends readonly [] | reado
         : never
     : never;
 
-type T01 = Assert<Unreadonly<MergeSort<[1, 2, 3]>>, [1, 2, 3]>;
-type T02 = Assert<Unreadonly<MergeSort<[1, 2, 3, 4, 5]>>, [1, 2, 3, 4, 5]>;
-type T03 = Assert<Unreadonly<MergeSort<[3, 2, 1]>>, [1, 2, 3]>;
-type T04 = Assert<Unreadonly<MergeSort<[5, 4, 3, 2, 1]>>, [1, 2, 3, 4, 5]>;
+type T01 = Assert<Equals<Unreadonly<MergeSort<[1, 2, 3]>>, [1, 2, 3]>>;
+type T02 = Assert<Equals<Unreadonly<MergeSort<[1, 2, 3, 4, 5]>>, [1, 2, 3, 4, 5]>>;
+type T03 = Assert<Equals<Unreadonly<MergeSort<[3, 2, 1]>>, [1, 2, 3]>>;
+type T04 = Assert<Equals<Unreadonly<MergeSort<[5, 4, 3, 2, 1]>>, [1, 2, 3, 4, 5]>>;

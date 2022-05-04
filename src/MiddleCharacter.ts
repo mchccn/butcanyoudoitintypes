@@ -8,7 +8,7 @@
  * related: IncludesString, Halves
  */
 
-import { Assert } from "./common";
+import { Assert, Equals } from "./common";
 import { UnknownArray } from "./utility";
 
 type Split<S extends string, R extends UnknownArray = readonly []> = S extends `${infer C}${infer M}` ? Split<M, readonly [...R, C]> : R;
@@ -41,7 +41,7 @@ type MiddleCharacter<S extends string> = IsOdd<Split<S>["length"]> extends true
         : never
     : "";
 
-type T01 = Assert<MiddleCharacter<"challenge">, "l">;
-type T02 = Assert<MiddleCharacter<"challenger">, "le">;
-type T03 = Assert<MiddleCharacter<" ">, " ">;
-type T04 = Assert<MiddleCharacter<"">, "">;
+type T01 = Assert<Equals<MiddleCharacter<"challenge">, "l">>;
+type T02 = Assert<Equals<MiddleCharacter<"challenger">, "le">>;
+type T03 = Assert<Equals<MiddleCharacter<" ">, " ">>;
+type T04 = Assert<Equals<MiddleCharacter<"">, "">>;

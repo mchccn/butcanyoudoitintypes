@@ -152,5 +152,19 @@
         "related": [
             "IsNotNumberLiteral"
         ]
+    },
+    {
+        "id": 12,
+        "name": "EachAsSingle",
+        "difficulty": 3,
+        "description": "Given a union, make a union of each member in the original wrapped in an object.",
+        "extra": "Do the reverse of this challenge.",
+        "tags": [
+            "fundamentals",
+            "unions"
+        ],
+        "related": [
+            "UnionToIntersection"
+        ]
     }
 ]

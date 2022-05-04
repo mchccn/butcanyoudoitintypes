@@ -8,11 +8,11 @@
  * related: DeleteCharacter
  */
 
-import { Assert } from "./common";
+import { Assert, Equals } from "./common";
 
 type IncludesString<S extends string, C extends string> = S extends `${string}${C}${string}` ? true : false;
 
-type T01 = Assert<IncludesString<"a long string for testing", "string" | "for">, true>;
-type T02 = Assert<IncludesString<"a long string for testing", "ing">, true>;
-type T03 = Assert<IncludesString<"a long string for testing", "ding">, false>;
-type T04 = Assert<IncludesString<"a long string for testing", "z">, false>;
+type T01 = Assert<Equals<IncludesString<"a long string for testing", "string" | "for">, true>>;
+type T02 = Assert<Equals<IncludesString<"a long string for testing", "ing">, true>>;
+type T03 = Assert<Equals<IncludesString<"a long string for testing", "ding">, false>>;
+type T04 = Assert<Equals<IncludesString<"a long string for testing", "z">, false>>;

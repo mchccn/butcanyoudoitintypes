@@ -8,11 +8,11 @@
  * related: IsEven, IsNotNumberLiteral
  */
 
-import { Assert } from "./common";
+import { Assert, Equals } from "./common";
 
 type IsNever<T> = [T] extends [never] ? true : false;
 
-type T01 = Assert<IsNever<void>, false>;
-type T02 = Assert<IsNever<unknown>, false>;
-type T03 = Assert<IsNever<any>, false>;
-type T04 = Assert<IsNever<never>, true>;
+type T01 = Assert<Equals<IsNever<void>, false>>;
+type T02 = Assert<Equals<IsNever<unknown>, false>>;
+type T03 = Assert<Equals<IsNever<any>, false>>;
+type T04 = Assert<Equals<IsNever<never>, true>>;

@@ -8,7 +8,7 @@
  * related: DeepOverlappingKeys
  */
 
-import { Assert, Never } from "./common";
+import { Assert, Equals, Never } from "./common";
 
 type NoOverlappingKeys<A, B> = [
     {
@@ -18,7 +18,7 @@ type NoOverlappingKeys<A, B> = [
     ? A & B
     : never;
 
-type T01 = Assert<NoOverlappingKeys<{}, {}>, {}>;
-type T02 = Assert<Never<NoOverlappingKeys<{ foo: number }, { foo: string }>>, true>;
-type T03 = Assert<NoOverlappingKeys<{}, {}>, {}>;
-type T04 = Assert<NoOverlappingKeys<{}, {}>, {}>;
+type T01 = Assert<Equals<NoOverlappingKeys<{}, {}>, {}>>;
+type T02 = Assert<Equals<Never<NoOverlappingKeys<{ foo: number }, { foo: string }>>, true>>;
+type T03 = Assert<Equals<NoOverlappingKeys<{}, {}>, {}>>;
+type T04 = Assert<Equals<NoOverlappingKeys<{}, {}>, {}>>;
