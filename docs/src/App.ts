@@ -13,11 +13,27 @@ export class App extends LitElement {
     private challenges = getData();
 
     render() {
-        return html`${until(
-            this.challenges.then((challenges) =>
-                challenges.map((challenge) => html`<challenge-card challengeId=${challenge.id} name=${challenge.name}></challenge-card>`)
-            ),
-            html`<p>Loading...</p>`
-        )}`;
+        return html`<div class="app max-w-2xl mx-auto">
+            <div class="challenges-container px-3 py-4 flex flex-col gap-3">
+                ${until(
+                    this.challenges.then((challenges) =>
+                        challenges.map(
+                            (challenge) =>
+                                html`<challenge-card
+                                    challengeId=${challenge.id}
+                                    name=${challenge.name}
+                                    difficulty=${challenge.difficulty}
+                                    description=${challenge.description}
+                                ></challenge-card>`
+                        )
+                    ),
+                    html`<p>Loading...</p>`
+                )}
+            </div>
+        </div>`;
+    }
+
+    createRenderRoot() {
+        return this;
     }
 }
