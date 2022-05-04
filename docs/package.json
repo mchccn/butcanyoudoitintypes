@@ -5,7 +5,8 @@
     "private": true,
     "scripts": {
         "watch": "tsc -w",
-        "build": "webpack"
+        "build": "webpack",
+        "dev": "webpack --watch"
     },
     "devDependencies": {
         "ts-loader": "^9.3.0",
