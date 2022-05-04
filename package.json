@@ -1,28 +1,34 @@
 {
-    "name": "@kelsny/butcanyoudoitintypes",
-    "version": "0.0.0",
-    "private": "true",
-    "description": "Everyone knows you can write code to do things, but can you write the same thing using only types?",
-    "scripts": {
-        "build": "ts-node src/build/data.ts && ts-node src/build/template.ts",
-        "fmt": "prettier --write ."
-    },
-    "keywords": [],
-    "author": "kelly <cursors.owo.uwu@gmail.com>",
-    "license": "MIT",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/kelsny/butcanyoudoitintypes.git"
-    },
-    "bugs": {
-        "url": "https://github.com/kelsny/butcanyoudoitintypes/issues"
-    },
-    "homepage": "https://github.com/kelsny/butcanyoudoitintypes#readme",
-    "devDependencies": {
-        "@types/node": "^17.0.31",
-        "prettier": "^2.6.2",
-        "ts-node": "^10.7.0",
-        "typescript": "^4.6.4"
-    }
+  "name": "@kelsny/butcanyoudoitintypes",
+  "version": "0.0.0",
+  "private": "true",
+  "description": "Everyone knows you can write code to do things, but can you write the same thing using only types?",
+  "scripts": {
+    "build": "ts-node src/build/data.ts && ts-node src/build/template.ts",
+    "fmt": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "kelly <cursors.owo.uwu@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelsny/butcanyoudoitintypes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kelsny/butcanyoudoitintypes/issues"
+  },
+  "homepage": "https://github.com/kelsny/butcanyoudoitintypes#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "lit": "^2.2.3"
+  },
+  "directories": {
+    "doc": "docs"
+  }
 }

@@ -1,0 +1,34 @@
+# @format
+
+# https://javascript.plainenglish.io/continuously-deploy-static-pages-with-github-actions-gh-pages-207e4a009d1c
+
+name: Build and GH-Page Deploy
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+              with:
+                  persist-credentials: false
+
+            - name: Install
+              run: yarn install
+
+            - name: Build
+              run: |
+                  yarn autoclean
+                  yarn build
+
+            - name: Deploy to GH Page
+              uses: JamesIves/github-pages-deploy-action@4.1.1
+              with:
+                  branch: gh-pages
+                  folder: dist
