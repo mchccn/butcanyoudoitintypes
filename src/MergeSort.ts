@@ -6,6 +6,8 @@
  * extra: Implement a different sorting algorithm.
  * tags: tuples, algorithms
  * related: Halves
+ *
+ * @format
  */
 
 import { Assert, Equals, Unreadonly } from "./common";

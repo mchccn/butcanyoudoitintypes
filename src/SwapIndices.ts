@@ -6,6 +6,8 @@
  * extra: Remove all even indexed elements of a tuple.
  * tags: tuples, logic
  * related: ReverseTuple
+ *
+ * @format
  */
 
 import { Assert, Equals } from "./common";

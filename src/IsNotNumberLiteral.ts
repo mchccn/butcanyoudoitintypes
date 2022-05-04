@@ -6,6 +6,8 @@
  * extra: Check if the passed type is a string literal.
  * tags: fundamentals, numbers
  * related: IsEven, IsNever
+ *
+ * @format
  */
 
 import { Assert, Equals } from "./common";

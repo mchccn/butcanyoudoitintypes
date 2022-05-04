@@ -6,6 +6,8 @@
  * extra: Concatenate two string literal types.
  * tags: fundamentals, strings
  * related: DeleteCharacter, IncludesString
+ *
+ * @format
  */
 
 import { Assert, Equals } from "./common";

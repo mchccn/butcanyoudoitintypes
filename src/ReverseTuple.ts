@@ -6,6 +6,8 @@
  * extra: Transpose a matrix or tuple of tuples.
  * tags: fundamentals, tuples
  * related: MergeSort
+ *
+ * @format
  */
 
 import { Assert, Equals } from "./common";

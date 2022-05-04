@@ -6,6 +6,8 @@
  * extra: Return never if the passed type is the generic number type.
  * tags: fundamentals, numbers
  * related: IsNotNumberLiteral
+ *
+ * @format
  */
 
 import { Assert, Equals } from "./common";

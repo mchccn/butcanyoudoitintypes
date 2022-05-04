@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ## Yes, but can you do it in types?
 
 > A collection of challenges which you complete in solely the type system.

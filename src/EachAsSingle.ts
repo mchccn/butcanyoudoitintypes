@@ -6,6 +6,8 @@
  * extra: Do the reverse of this challenge.
  * tags: fundamentals, unions
  * related: UnionToIntersection
+ *
+ * @format
  */
 
 import { Assert, Equals, Never } from "./common";

@@ -6,6 +6,8 @@
  * extra: Output the difference of the two types if they have conflicting keys.
  * tags: fundamentals, utility
  * related: DeepOverlappingKeys
+ *
+ * @format
  */
 
 import { Assert, Equals, Never } from "./common";

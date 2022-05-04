@@ -6,6 +6,8 @@
  * extra: Make it work for checking multiple strings at once as a union.
  * tags: strings
  * related: DeleteCharacter
+ *
+ * @format
  */
 
 import { Assert, Equals } from "./common";

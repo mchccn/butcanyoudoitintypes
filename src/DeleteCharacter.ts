@@ -6,6 +6,8 @@
  * extra: Make it work for deleting multiple characters using a union.
  * tags: strings
  * related: ReplaceCharacter
+ *
+ * @format
  */
 
 import { Assert, Equals } from "./common";

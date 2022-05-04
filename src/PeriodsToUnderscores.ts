@@ -6,6 +6,8 @@
  * extra: Create a type that transforms camel case strings to snake case.
  * tags: strings
  * related: IncludesString
+ *
+ * @format
  */
 
 import { Assert, Equals } from "./common";

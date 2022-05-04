@@ -6,6 +6,8 @@
  * extra: Return string with the middle characters removed.
  * tags: strings, logic
  * related: IncludesString, Halves
+ *
+ * @format
  */
 
 import { Assert, Equals } from "./common";

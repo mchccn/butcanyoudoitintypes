@@ -1,3 +1,5 @@
+/** @format */
+
 export type Increment = readonly [
     1,
     2,

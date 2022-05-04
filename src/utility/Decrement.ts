@@ -1,3 +1,5 @@
+/** @format */
+
 export type Decrement = readonly [
     -1,
     0,

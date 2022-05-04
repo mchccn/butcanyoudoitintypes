@@ -1,3 +1,5 @@
+/** @format */
+
 import { readdirSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
