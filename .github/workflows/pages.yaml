@@ -24,8 +24,11 @@ jobs:
 
             - name: Build
               run: |
+                  yarn build
+                  cd docs
                   yarn autoclean
                   yarn build
+                  cd ..
 
             - name: Deploy to GH Page
               uses: JamesIves/github-pages-deploy-action@4.1.1
