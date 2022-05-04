@@ -26,7 +26,8 @@ jobs:
               run: |
                   yarn build
                   cd docs
-                  yarn autoclean
+                  yarn install
+                  yarn autoclean --force
                   yarn build
                   cd ..
 
