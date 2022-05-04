@@ -24,18 +24,18 @@ Challenges are listed in the `src/` directory:
 
 Some common utility types you may use in your solutions are provided in `src/utility`:
 
-- [`Decrement.ts`](./src/utility/Decrement.ts)
-- [`Expand.ts`](./src/utility/Expand.ts)
-- [`Increment.ts`](./src/utility/Increment.ts)
-- [`Primitive.ts`](./src/utility/Primitive.ts)
-- [`RetainMutability.ts`](./src/utility/RetainMutability.ts)
-- [`UnknownArray.ts`](./src/utility/UnknownArray.ts)
+-   [`Decrement.ts`](./src/utility/Decrement.ts)
+-   [`Expand.ts`](./src/utility/Expand.ts)
+-   [`Increment.ts`](./src/utility/Increment.ts)
+-   [`Primitive.ts`](./src/utility/Primitive.ts)
+-   [`RetainMutability.ts`](./src/utility/RetainMutability.ts)
+-   [`UnknownArray.ts`](./src/utility/UnknownArray.ts)
 
 Testing-related types and mock data can be found in `src/common`:
 
-- [`Assert.ts`](./src/common/Assert.ts)
-- [`Equals.ts`](./src/common/Equals.ts)
-- [`Never.ts`](./src/common/Never.ts)
-- [`Unreadonly.ts`](./src/common/Unreadonly.ts)
+-   [`Assert.ts`](./src/common/Assert.ts)
+-   [`Equals.ts`](./src/common/Equals.ts)
+-   [`Never.ts`](./src/common/Never.ts)
+-   [`Unreadonly.ts`](./src/common/Unreadonly.ts)
 
 For easier browsing of the available challenges, visit the GitHub pages [here](https://kelsny.github.io/butcanyoudoitintypes/).

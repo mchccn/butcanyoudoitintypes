@@ -24,14 +24,14 @@ writeFileSync(
                 "<!--UTILITIES-->",
                 readdirSync(join(__dirname, "..", "utility"), { withFileTypes: true })
                     .filter((d) => d.isFile() && d.name.endsWith(".ts") && !d.name.startsWith("index"))
-                    .map((v) => `- [\`${v.name}\`](./src/utility/${v.name})`)
+                    .map((v) => `-   [\`${v.name}\`](./src/utility/${v.name})`)
                     .join("\n")
             )
             .replace(
                 "<!--COMMON-->",
                 readdirSync(join(__dirname, "..", "common"), { withFileTypes: true })
                     .filter((d) => d.isFile() && d.name.endsWith(".ts") && !d.name.startsWith("index"))
-                    .map((v) => `- [\`${v.name}\`](./src/common/${v.name})`)
+                    .map((v) => `-   [\`${v.name}\`](./src/common/${v.name})`)
                     .join("\n")
             )
 );
