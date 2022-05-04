@@ -15,7 +15,8 @@ export class ChallengeCard extends LitElement {
 
     render() {
         return html`<div class="challenge-card">
-            <p>${this.challengeId}</p>
+            <p class="challenge-id">${this.challengeId}</p>
+            <h1 class="challenge-name">${this.name}</h1>
         </div>`;
     }
 }
