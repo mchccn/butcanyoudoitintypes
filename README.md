@@ -24,6 +24,8 @@ Challenges are listed in the `src/` directory:
 12. (`★★★☆☆☆`) [EachAsSingle](./src/EachAsSingle.ts)
 13. (`★★☆☆☆☆`) [SwapIndices](./src/SwapIndices.ts)
 14. (`★★☆☆☆☆`) [SplitString](./src/SplitString.ts)
+15. (`★★★☆☆☆`) [FirstFew](./src/FirstFew.ts)
+16. (`★★★★☆☆`) [RoughlyIncludes](./src/RoughlyIncludes.ts)
 
 Some common utility types you may use in your solutions are provided in `src/utility`:
 

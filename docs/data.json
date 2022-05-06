@@ -195,5 +195,33 @@
             "DeleteCharacter",
             "IncludesString"
         ]
+    },
+    {
+        "id": 15,
+        "name": "FirstFew",
+        "difficulty": 3,
+        "description": "Get the first few elements of a tuple.",
+        "extra": "Make the resulting tuple retain the mutability of the original.",
+        "tags": [
+            "logic",
+            "tuples"
+        ],
+        "related": [
+            "Reverse"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "RoughlyIncludes",
+        "difficulty": 4,
+        "description": "Check whether a string has all the characters of the target string in order.",
+        "extra": "Breaks in sequences of letters invalidate the inclusion.",
+        "tags": [
+            "logic",
+            "strings"
+        ],
+        "related": [
+            "IncludesString"
+        ]
     }
 ]
