@@ -2,6 +2,7 @@
 
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
+import { App } from "./App";
 
 @customElement("challenge-card")
 export class ChallengeCard extends LitElement {
@@ -22,9 +23,13 @@ export class ChallengeCard extends LitElement {
     @property()
     tags: string[];
 
+    @property()
+    app: App;
+
     render() {
         return html`<div
             class="challenge-card hover:-translate-x-1 hover:-translate-y-1 transition-transform sm:gap-2 flex flex-col gap-1 w-full px-4 py-3 shadow"
+            id="challenge-${this.name}"
         >
             <h1 class="challenge-name sm:text-xl font-mono text-sky-500 hover:underline w-fit">
                 <a title="Go to source of ${this.name}" href="https://github.com/kelsny/butcanyoudoitintypes/blob/master/src/${this.name}.ts">${this.name}</a>
@@ -39,6 +44,7 @@ export class ChallengeCard extends LitElement {
                         html`<span
                             title="See all challenges with this tag"
                             class="text-xs px-2 py-1 rounded-sm text-gray-700 bg-sky-200 cursor-pointer hover:bg-sky-300 transition"
+                            @click=${() => this.app.lookAtTag(tag)}
                             >${tag}</span
                         >`
                 )}

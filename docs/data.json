@@ -180,5 +180,20 @@
         "related": [
             "ReverseTuple"
         ]
+    },
+    {
+        "id": 14,
+        "name": "SplitString",
+        "difficulty": 2,
+        "description": "Split a string into a tuple.",
+        "extra": "Optionally handle a separator and split the string by the given separator.",
+        "tags": [
+            "strings",
+            "tuples"
+        ],
+        "related": [
+            "DeleteCharacter",
+            "IncludesString"
+        ]
     }
 ]

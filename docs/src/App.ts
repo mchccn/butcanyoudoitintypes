@@ -34,6 +34,12 @@ export class App extends LitElement {
 
     private tagSelect: Ref<HTMLSelectElement> = createRef();
 
+    public lookAtTag(tag: string) {
+        this.filterTag = tag;
+
+        this.requestUpdate();
+    }
+
     private changeTag(event: MouseEvent) {
         this.filterTag = (event.target as HTMLSelectElement).value;
 
@@ -89,7 +95,7 @@ export class App extends LitElement {
                                     // whatever the fuck this hack is, lit.dev better fix this...
                                     setTimeout(() => (this.tagSelect.value!.value = this.filterTag), 0),
                                     [
-                                        html`<option value=".*">tag</option>`,
+                                        html`<option value=".*">${this.filterTag === ".*" ? "tag" : "any tag"}</option>`,
                                         ...[...new Set(challenges.flatMap(({ tags }) => tags))]
                                             .sort()
                                             .map((tag) => html`<option value="${tag}">${tag}</option>`),
@@ -115,6 +121,7 @@ export class App extends LitElement {
                                         difficulty=${challenge.difficulty}
                                         description=${challenge.description}
                                         .tags=${challenge.tags}
+                                        .app=${this as App}
                                     ></challenge-card>`
                             )
                     ),

@@ -1,3 +1,3 @@
 /** @format */
 
-export type UnknownArray = UnknownArray;
+export type UnknownArray = ReadonlyArray<unknown>;

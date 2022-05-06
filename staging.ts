@@ -6,3 +6,5 @@
 // ValidTupleIndices
 // ValidParentheses
 // DeepGet
+// HasAllLetters
+// FirstFew
