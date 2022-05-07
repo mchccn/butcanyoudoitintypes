@@ -4,7 +4,6 @@ import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { createRef, Ref, ref } from "lit/directives/ref.js";
 import { until } from "lit/directives/until.js";
-
 import { Challenge, getData } from "./data";
 
 const sorters = {
