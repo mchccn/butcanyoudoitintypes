@@ -1,0 +1,1 @@
+export type EachAsSingle<T> = T extends T ? { wrapped: T } : never;

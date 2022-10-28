@@ -11,8 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-
-type PeriodsToUnderscores<S extends string> = S extends `${infer A}.${infer B}` ? `${A}_${PeriodsToUnderscores<B>}` : S;
+import { PeriodsToUnderscores } from "./solutions/PeriodsToUnderscores";
 
 type T01 = Assert<Equals<PeriodsToUnderscores<"a.b.c">, "a_b_c">>;
 type T02 = Assert<Equals<PeriodsToUnderscores<"">, "">>;

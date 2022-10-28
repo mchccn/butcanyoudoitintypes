@@ -11,14 +11,7 @@
  */
 
 import { Assert, Equals, Never } from "./common";
-
-type NoOverlappingKeys<A, B> = [
-    {
-        [K in keyof A]: K extends keyof B ? true : never;
-    }[keyof A]
-] extends [never]
-    ? A & B
-    : never;
+import { NoOverlappingKeys } from "./solutions/NoOverlappingKeys";
 
 type T01 = Assert<Equals<NoOverlappingKeys<{}, {}>, {}>>;
 type T02 = Assert<Equals<Never<NoOverlappingKeys<{ foo: number }, { foo: string }>>, true>>;

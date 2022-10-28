@@ -11,8 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-
-type IncludesString<S extends string, C extends string> = S extends `${string}${C}${string}` ? true : false;
+import { IncludesString } from "./solutions/IncludesString";
 
 type T01 = Assert<Equals<IncludesString<"a long string for testing", "string" | "for">, true>>;
 type T02 = Assert<Equals<IncludesString<"a long string for testing", "ing">, true>>;

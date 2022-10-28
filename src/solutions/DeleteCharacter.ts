@@ -1,0 +1,1 @@
+export type DeleteCharacter<S extends string, C extends string> = S extends `${infer A}${C}${infer B}` ? DeleteCharacter<`${A}${B}`, C> : S;

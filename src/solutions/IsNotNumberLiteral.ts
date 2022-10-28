@@ -1,0 +1,1 @@
+export type IsNotNumberLiteral<T> = T extends number ? (0 extends T ? (1 extends T ? false : true) : true) : never;

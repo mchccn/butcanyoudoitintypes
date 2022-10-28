@@ -11,8 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-
-type IsNever<T> = [T] extends [never] ? true : false;
+import { IsNever } from "./solutions/IsNever";
 
 type T01 = Assert<Equals<IsNever<void>, false>>;
 type T02 = Assert<Equals<IsNever<unknown>, false>>;

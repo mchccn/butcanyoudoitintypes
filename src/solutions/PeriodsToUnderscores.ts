@@ -1,0 +1,1 @@
+export type PeriodsToUnderscores<S extends string> = S extends `${infer A}.${infer B}` ? `${A}_${PeriodsToUnderscores<B>}` : S;

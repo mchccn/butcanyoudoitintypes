@@ -11,8 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-
-type MakeExciting<S extends string> = `${S}!`;
+import { MakeExciting } from "./solutions/MakeExciting";
 
 type T01 = Assert<Equals<MakeExciting<"hello world">, "hello world!">>;
 type T02 = Assert<Equals<MakeExciting<"">, "!">>;
