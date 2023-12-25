@@ -1,0 +1,1 @@
+export type IncludesString<S extends string, C extends string> = S extends `${string}${C}${string}` ? true : false;

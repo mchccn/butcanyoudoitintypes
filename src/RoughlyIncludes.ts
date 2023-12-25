@@ -11,10 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-
-type MakeMatcher<S extends string, R extends string = `${string}`> = S extends `${infer C}${infer M}` ? MakeMatcher<M, `${R}${C}${string}`> : R;
-
-type RoughlyIncludes<Source extends string, Target extends string> = Source extends MakeMatcher<Target> ? true : false;
+import { RoughlyIncludes } from "./solutions/RoughlyIncludes";
 
 type T01 = Assert<Equals<RoughlyIncludes<"hhhhhhheeeeelllllllllllooooo", "hello">, true>>;
 type T02 = Assert<Equals<RoughlyIncludes<"hhhhhhhlllllllllllooooo", "hello">, false>>;

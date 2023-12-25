@@ -11,8 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-
-type DeleteCharacter<S extends string, C extends string> = S extends `${infer A}${C}${infer B}` ? DeleteCharacter<`${A}${B}`, C> : S;
+import { DeleteCharacter } from "./solutions/DeleteCharacter";
 
 type T01 = Assert<Equals<DeleteCharacter<"hello world", "o">, "hell wrld">>;
 type T02 = Assert<Equals<DeleteCharacter<"hate this challenge", "h">, "ate tis callenge">>;

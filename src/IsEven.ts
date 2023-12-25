@@ -11,8 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-
-type IsEven<N extends number> = `${N}` extends `${string}${"0" | "2" | "4" | "6" | "8"}` ? true : false;
+import { IsEven } from "./solutions/IsEven";
 
 type T01 = Assert<Equals<IsEven<0>, true>>;
 type T02 = Assert<Equals<IsEven<42>, true>>;

@@ -11,13 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-import { Increment, UnknownArray } from "./utility";
-
-type FirstFew<T extends UnknownArray, N extends number = 0, R extends UnknownArray = [], I extends number = 0> = I extends N
-    ? R
-    : T[I] extends undefined
-    ? R
-    : FirstFew<T, N, [...R, T[I]], Increment[I]>;
+import { FirstFew } from "./solutions/FirstFew";
 
 type T01 = Assert<Equals<FirstFew<[1, 2, 3, 4, 5], 3>, [1, 2, 3]>>;
 type T02 = Assert<Equals<FirstFew<[], 0>, []>>;

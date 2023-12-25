@@ -11,11 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-import { RetainMutablity, UnknownArray } from "./utility";
-
-type ReverseTuple<A, R extends UnknownArray = []> = A extends readonly [infer First, ...infer Rest]
-    ? ReverseTuple<RetainMutablity<Rest, A>, [First, ...R]>
-    : RetainMutablity<R, A>;
+import { ReverseTuple } from "./solutions/ReverseTuple";
 
 type T01 = Assert<Equals<ReverseTuple<[1, 2, 3]>, [3, 2, 1]>>;
 type T02 = Assert<Equals<ReverseTuple<[3, 2, 1]>, [1, 2, 3]>>;

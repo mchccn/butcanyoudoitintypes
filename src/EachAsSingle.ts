@@ -11,8 +11,7 @@
  */
 
 import { Assert, Equals, Never } from "./common";
-
-type EachAsSingle<T> = T extends T ? { wrapped: T } : never;
+import { EachAsSingle } from "./solutions/EachAsSingle";
 
 type T01 = Assert<
     Equals<

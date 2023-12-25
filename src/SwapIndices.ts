@@ -11,11 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-import { UnknownArray } from "./utility";
-
-type SwapIndices<A extends UnknownArray, T extends number, S extends number> = {
-    [K in keyof A]: `${T}` extends K ? A[S] : `${S}` extends K ? A[T] : A[K];
-};
+import { SwapIndices } from "./solutions/SwapIndices";
 
 type T01 = Assert<Equals<SwapIndices<[1, 2, 3], 0, 2>, [3, 2, 1]>>;
 type T02 = Assert<Equals<SwapIndices<[1, 2, 3], 0, 1>, [2, 1, 3]>>;

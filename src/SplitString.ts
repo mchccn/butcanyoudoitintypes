@@ -11,9 +11,7 @@
  */
 
 import { Assert, Equals } from "./common";
-import { UnknownArray } from "./utility";
-
-type SplitString<S extends string, R extends UnknownArray = []> = S extends `${infer C}${infer M}` ? SplitString<M, [...R, C]> : R;
+import { SplitString } from "./solutions/SplitString";
 
 type T01 = Assert<Equals<SplitString<"hi!">, ["h", "i", "!"]>>;
 type T02 = Assert<Equals<SplitString<"">, []>>;
